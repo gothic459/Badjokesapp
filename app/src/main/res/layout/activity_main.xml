@@ -19,21 +19,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/GenBut1"
-        android:layout_width="214dp"
-        android:layout_height="207dp"
-        android:layout_marginTop="124dp"
-        android:layout_marginBottom="111dp"
-        android:clickable="true"
-        android:onClick="jokeGenerator"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/jokeArea"
-        app:layout_constraintVertical_bias="0.551" />
-
     <TextView
         android:id="@+id/GenBut"
         android:layout_width="168dp"
@@ -50,7 +35,8 @@
         app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="@+id/GenBut1"
         app:layout_constraintTop_toTopOf="@+id/GenBut1"
-        app:layout_constraintVertical_bias="0.484" />
+        app:layout_constraintVertical_bias="0.484"
+        android:focusable="true" />
 
     <View
         android:id="@+id/divider"
@@ -77,5 +63,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.2" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/GenBut1"
+        android:layout_width="214dp"
+        android:layout_height="207dp"
+        android:layout_marginTop="124dp"
+        android:layout_marginBottom="111dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="jokeGenerator"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jokeArea"
+        app:layout_constraintVertical_bias="0.551" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
